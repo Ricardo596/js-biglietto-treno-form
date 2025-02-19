@@ -2,8 +2,8 @@ const prezzoKm = 0.21;
 const scontoMinori = 0.2;
 const scontoAnziani = 0.4;
 
-const km = Number(prompt("Numero di km"));
-const eta = Number(prompt("Età dei passeggeri"));
+const km = Number
+const eta = Number
 
 let prezzoBiglietto = km * prezzoKm;
 
