@@ -12,21 +12,48 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <h1 class="titolo">Calcola il prezzo del tuo biglietto</h1>
     <form class="row gy-2 gx-3 align-items-center">
         <div class="col-auto">
+            <p class="colore">Nome e cognome</p>
           <label class="visually-hidden" for="autoSizingInput">Name</label>
-          <input type="text" class="form-control" id="autoSizingInput" placeholder="">
+          <input type="text" class="form-control" id="autoSizingInput" placeholder="ciao">
         </div>
         <div class="col-auto">
-          <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-          <div class="input-group">
-            <div class="input-group-text">@</div>
+          <label>Username</label>
             <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
           </div>
         </div>
         <div class="col-auto">
-          <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+          <label>Fascia d'età</label>
           <select class="form-select" id="autoSizingSelect">
-            <option selected>Choose...</option>
+            <option selected>Maggiorenne</option>
+            <option value="Minorenne">Minorenne</option>
+            <option value="Over 65">Over</option>
+            <div>
+                <input type="button" value="Genera">
+                <input type="button" value="Annulla">
+            </div>
     </form>
+    <div class="row g-3, space">
+        <h1 class="titolo">Il tuo biglietto</h1>
+        <div class="col-sm-7">
+            <h4>Dettaglio passeggeri</h2>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label, pass"><strong>Nome passeggero</strong></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+        </div>
+        <div class="col-sm">
+          <input type="text" class="form-control, pos" placeholder="State" aria-label="State">
+        </div>
+        <div class="col-sm">
+          <input type="text" class="form-control, pos" placeholder="Zip" aria-label="Zip">
+        </div>
+      </div>
+
+
+
+
+
+
 
 
 
@@ -40,6 +67,6 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>
-    <script src="/file.js"></script>
+    <script src="file.js"></script>
 </body>
 </html>
